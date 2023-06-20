@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>tutorial-4(10)</title>
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge"> 
+	<title>Document</title> 
+</head> 
+<body> 
+<h1> fadeIn</h1> 
+	<button style="margin-left: 25px;background-color: white;" id="uc1">click</button></br> 
+	<div id="d1" style="height: 80px;width: 80px;background-color: pink; display: none;">
+</div></br></br> 
+<h1> fadeOut</h1></br>
+  
+	<button style="margin-left: 25px;background-color: white;" id="uc2">click</button></br> 
+	<div id="d2" style="height: 80px;width: 80px;background-color: pink; "></div></br></br> 
+
+<h1> fadeToggle</h1></br> 
+	<button style="margin-left: 25px;background-color: white;" id="uc3">click</button></br> 
+	<div id="d3" style="height: 80px;width: 80px;background-color: pink; "></div></br></br> 
+
+<h1> fadeTo</h1></br> 
+	<button style="margin-left: 25px;background-color: white;" id="uc4">click</button></br> 
+	<div id="d4" style="height: 80px;width: 80px;background-color: pink; "></div></br> 
+</body> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script> 
+<script> 
+	$(document).ready(function () 
+	{ 
+		$("#uc1").click(function(){ 
+			$('#d1').fadeIn(); 
+		}); 
+		$("#uc2").click(function(){ 
+			$('#d2').fadeOut(); 
+		}); 
+		$("#uc3").click(function(){ 
+			$('#d3').fadeToggle(); 
+		}); 
+		$("#uc4").click(function(){ 
+			$('#d4').fadeTo(1000, 0.4); 
+		}); 
+	}); 
+</script> 
+</body> 
+</html>
+  

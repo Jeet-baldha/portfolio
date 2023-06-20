@@ -1,0 +1,270 @@
+<html>
+<head>
+    
+    <title>Bootstrap</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="img/favicon_io/site.webmanifest">
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            
+            box-sizing: border-box;
+        }
+        .nav{
+            display: flex;
+            justify-content:baseline;
+            position:fixed;
+            background-color:rgb(34, 34, 34);
+            padding: 10px;
+            width: 100%;
+            
+            box-shadow: 1px 3px 10px 3px rgb(0, 0, 0);
+        }
+   
+        li{
+            list-style-type: none;
+        }
+        
+        .nav li a{
+            list-style-type: none;
+            color: white;
+            padding: 0px 15px;
+            border: none;
+            outline: none;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+        .nav li ion-icon {
+            color:white;
+            font-size: 20px;
+        }
+        .nav li a:hover{
+           text-decoration: underline ;
+            text-decoration: bold;
+        }
+        .header{
+            background: url(img/blue.jfif);
+            background-repeat: no-repeat;
+            background-size:cover;
+            height: 43vh;
+        }
+        .text-1{
+            text-align: center;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 75px;
+            font-weight: 1000;
+            padding-top: 40px;
+            letter-spacing: 1px;
+          
+        }
+        .text-2{
+            color: white;
+            font-size: 3vw;
+            font-weight: 300;
+            text-align: center;
+            letter-spacing: 1px;
+            padding: 15px;
+        }
+        
+        .but{
+            position:relative;
+            left: 44vw;
+            padding: 5px 10px;
+            background-color:rgb(65, 65, 245);
+            color: white;
+            font-weight: 500;
+            line-height: 1.4rem;
+            letter-spacing: 1px;
+            border: none;
+            outline: none;
+            transition: 0.5s;
+        }
+        .but:hover{
+            cursor: pointer;
+            border-radius: 25px;
+            box-shadow: 1px 2px 12px rgb(45, 45, 45)
+        }
+        a:hover{
+            cursor: pointer;
+         
+        }
+        .center{
+            display: flex;
+            background-color: rgb(237, 236, 236);
+            justify-content:center;
+        }
+        .center div{
+            padding: 5px;
+        }
+        .center img{
+            width: 5vh;
+            padding-left: 15px;  
+        }
+        .center a{
+            position: relative;
+            top:-5px;
+            text-align: center;
+            color: black;
+            padding-left: 5px;
+            margin-bottom: 5px;
+            text-decoration: none;
+        }
+        .body{
+            display: block;
+        }
+        .body h1{
+            padding-top: 15px;
+            text-align: center;
+        }
+        .body h4{
+            text-align: center;
+            font-weight: 200;
+            padding-top: 10px;
+        }
+        .content{
+            display: flex;
+            justify-content:space-around;   
+            margin-top: 25px
+            
+        }
+    
+        .git {
+            width: 30vw;
+            transition: 0.5s;
+            box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.489);
+            border-radius: 10px;
+            
+        }
+        .com {
+            width: 30vw;
+            box-shadow: 5px 5px 15px rgb(130, 130, 130);
+            border-radius: 10px;
+        }
+        .fea {
+            width: 30vw;
+            box-shadow: 5px 5px 12px rgb(130, 130, 130);
+            border-radius: 10px;
+
+        }
+        .git h4{
+            text-align: center;
+    
+        }
+        .com h4{
+            text-align: center;
+        }
+        .fea h4{
+            text-align: center;
+        }
+        .git img{
+            width: 10vw;
+            margin-left: 10vw;
+        }
+        .com img{
+            width: 10vw;
+            margin-left: 10vw;
+        }
+        .fea img{
+            width: 10vw;
+            margin-left: 10vw;
+        }
+        p{
+            padding: 5px 10px;
+            text-align: justify;
+        }
+  
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <li><ion-icon name="logo-html5" ></ion-icon></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Example</a></li>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        
+    </div>
+    <div class="header">
+        <h1 class="text-1">Bootstrap</h1>
+        <h5 class="text-2">Sleek,instituive,and powerfull frontend framwork for faster and easiar web devlopment</h5>
+        <a href="https://github.com/twbs/bootstrap/releases/download/v5.2.0-beta1/bootstrap-5.2.0-beta1-dist.zip"><button class="but">Download Bootstrap</button></a>
+    </div>
+    <div class="center">
+        <div><img src="img/facebbok.png" alt=""><a href="#">Facbook</a></div>
+        <div> <img src="img/intsa.png" alt=""><a href="#">Instagram</a></div>
+        <div><img src="img/twitter.png" alt=""><a href="#">Twitter</a></div>
+        </div>
+    <div class="body">
+        <h1>Introducing Bootstrap</h1>
+        <h4>Need Resource and love Bootstrap ? look no further</h4>
+    </div>
+
+
+    <div class="content">
+        <div class="git">
+            <img src="img/git.png" alt="git-hub logo">
+            <h4>By neards, For neards</h4>
+            <p>GitHub is a web-based interface that uses Git, the open source version control software that lets multiple people make separate changes to web pages at the same time</p>
+        </div>
+        <div class="com">
+            <img src="img/com.png" alt="computer">
+            <h4>Made for EveryOne</h4>
+            <p>IBM's first PC was introduced on 12 August 1981. In 1982 "The Computer" was named Machine of the Year by Time magazine. In the 2010s, several companies such as Hewlett-Packard and Sony sold off their PC and laptop divisions.</p>
+        </div>
+        <div class="fea">
+            <img src="img/tech.png" alt="">
+            <h4>Packed With Features</h4>
+            <p>Technology can be a powerful tool for transforming learning. It can help affirm and advance relationships between educators and students</p>
+        </div>
+    </div>
+   
+    <div class="content">
+        <div class="git">
+            <img src="img/git.png" alt="git-hub logo">
+            <h4>By neards, For neards</h4>
+            <p>GitHub is a web-based interface that uses Git, the open source version control software that lets multiple people make separate changes to web pages at the same time</p>
+        </div>
+        <div class="com">
+            <img src="img/com.png" alt="computer">
+            <h4>Made for EveryOne</h4>
+            <p>IBM's first PC was introduced on 12 August 1981. In 1982 "The Computer" was named Machine of the Year by Time magazine. In the 2010s, several companies such as Hewlett-Packard and Sony sold off their PC and laptop divisions.</p>
+        </div>
+        <div class="fea">
+            <img src="img/tech.png" alt="">
+            <h4>Packed With Features</h4>
+            <p>Technology can be a powerful tool for transforming learning. It can help affirm and advance relationships between educators and students</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="git">
+            <img src="img/git.png" alt="git-hub logo">
+            <h4>By neards, For neards</h4>
+            <p>GitHub is a web-based interface that uses Git, the open source version control software that lets multiple people make separate changes to web pages at the same time</p>
+        </div>
+        <div class="com">
+            <img src="img/com.png" alt="computer">
+            <h4>Made for EveryOne</h4>
+            <p>IBM's first PC was introduced on 12 August 1981. In 1982 "The Computer" was named Machine of the Year by Time magazine. In the 2010s, several companies such as Hewlett-Packard and Sony sold off their PC and laptop divisions.</p>
+        </div>
+        <div class="fea">
+            <img src="img/tech.png" alt="">
+            <h4>Packed With Features</h4>
+            <p>Technology can be a powerful tool for transforming learning. It can help affirm and advance relationships between educators and students</p>
+        </div>
+    </div>
+    
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

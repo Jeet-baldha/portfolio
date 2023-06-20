@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color: #2ecc71;
+}
+
+
+.container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 20px #2ecc71;
+    border-radius: 5px;
+
+}
+
+.left {
+    padding: 25px;
+    background-color: #e3f0c1;
+    color: black;
+
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: justify;
+    padding: 15px;
+}
+
+.right img {
+
+    padding-top: 100px;
+}
+
+.but {
+    border: 0;
+    background: none;
+    display: block;
+    font-size: 15px;
+    font-weight: 800;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: black;
+    border-radius: 34px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.but :hover {
+    background-color: #2ecc71;
+    color: white;
+    width: auto;
+}
+
+.int {
+    padding-bottom: 15px;
+    outline: none;
+}
+
+.heading {
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.note textarea {
+    background-color: transparent;
+    width: 100%;
+}
+
+#profile {
+    background-color: transparent;
+    border: none;
+}
+
+select {
+    background-color: transparent;
+    padding: 0;
+    width: 100%;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+select option {
+    background-color: transparent;
+}
+
+input [type="file"] {
+    background-color: transparent;
+    color: #4E9F3D;
+    opacity: 1;
+}
+
+input [type="date"] {
+    color: green;
+}
+
+input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    background-color: transparent;
+}
+
+#acc {
+    padding-top: 5px;
+    text-align: right;
+}
+
+#acc a {
+
+    color: black;
+
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    opacity: 1;
+    /* Firefox */
+}

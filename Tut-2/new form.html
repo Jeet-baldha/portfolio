@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated form login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background: rgba(0, 0, 0, 0.479);
+        }
+
+        .box {
+            width: 300px;
+            border-radius: 5px;
+
+            padding: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.1);
+            text-align: center;
+            outline: none;
+        }
+
+        .box h1 {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .box input[type=text],
+        input[type=password] {
+
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #3498db;
+            padding: 14px 10px;
+            width: 200px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+        }
+
+        .box input[type=text]:focus,
+        .box input[type=password]:focus {
+            width: 280px;
+            border-color: #2ecc71;
+        }
+
+        .box input[type=submit] {
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #2ecc71;
+            padding: 14px 40px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.5s;
+            cursor: pointer;
+
+
+        }
+
+        .box input[type=submit]:hover {
+            background: #2ecc71;
+            font-weight: 5000;
+        }
+
+        video {
+            position: fixed;
+            top: 0%;
+            bottom: 0px;
+        }
+
+        #text {
+            color: white;
+            font-size: 14px;
+            float: left;
+        }
+
+        .link-1 {
+            color: #3498db;
+            font-size: 14px;
+            float: left;
+        }
+
+        .link-2 {
+            color: #3498db;
+            font-size: 14px;
+
+        }
+
+        .link-1:hover {
+            color: #2ecc71;
+        }
+
+        .link-2:hover {
+            color: #2ecc71;
+        }
+    </style>
+</head>
+
+<body>
+    <video src="img/video.mp4" autoplay loop muted></video>
+    <form class="box" action="index.html" method="post">
+        <h1>Login</h1>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <input type="submit" value="Login">
+        <a href="#" class="link-1">Forgot password</a><br>
+        <label for="" id="text">Don't have account ?</label>
+        <a href="index.html" target="_blank" class="link-2">Register here</a>
+    </form>
+
+</body>
+
+</html>

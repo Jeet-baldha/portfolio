@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script>
+        $().ready(function () {
+ 
+ $("#commonForm").validate({
+     // in 'rules' user have to specify all the constraints for respective fields
+     rules: {
+         uname: {
+             required: true,
+             minlength: 2 //for length of lastname
+         },
+         password: {
+             required: true,
+             minlength: 6
+         },
+         email: {
+             required: true,
+             email: true
+         },
+         agree: "required"
+     },
+     // in 'messages' user have to specify message as per rules
+     messages: {
+         username: {
+             required: " Please enter a username",
+         },
+         password: {
+             required: " passsword have must be 6 digit",
+         },
+         agree: "Please accept our policy"
+     }
+ });
+});
+    </script>
+    <style>
+        .container{
+            height: 50vh;
+        }
+
+        form {
+            padding-top: 10px;
+        }
+        *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+
+        display: flex;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        
+    }
+    
+    .form{
+        padding: 50px;
+        background-color:#FFB200;
+        border-radius: 5px;
+
+    }
+
+    .form h1{
+
+        color: white;
+        margin-bottom: 15px;
+
+    }
+
+    .form p{
+        color: white;
+        font-size: 18px;
+    }
+
+    #mess{
+        color: black;
+        font-size: 15px;
+        padding-top: 20px;
+    }
+
+    label{
+        display: block;
+        font-size: 15px;
+        color: red;
+        padding-top: 0px;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .form input[type=text],input[type=password],input[type=email] {
+
+        display: block;
+        padding: 5px;
+        width: 200px;
+        margin: 2px 0px 10px 0;
+        outline: none;
+        border: none;
+        border-radius: 2px;
+
+
+    }
+
+
+
+    .but{
+        margin-top: 10px;
+        padding: 5px 15px;
+        color:#FFB200;
+        background-color: white;
+        outline: none;
+        font-size: 1rem;
+        border: none;
+        font-weight: 800;
+        letter-spacing: 1px;
+        border-radius: 2px;
+        transition: 0.5s;
+    }
+
+    .but:hover{
+  
+        cursor: pointer;
+        border-radius: 35px;
+    }
+
+
+    .image img{
+        width: 350px;
+        padding-top: 50px;
+    }
+
+    .is-invalid{
+        display:none;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="form">
+            <h1>Login</h1>
+            <form action="" id="commonForm" method="post">
+                <p>Email</p>
+                <input type="email" id="email" name="email" placeholder="abc123@xyz.com" required>
+                <p>password</p>
+                <input type="password" name="password" placeholder="6-digit" required>
+                <input type="submit" class="but" name="submit">
+            </form>
+
+            <p id="mess">don't have an account <a href="singup.html">Register</a> ?</p>
+        </div>
+
+
+    </div>
+
+    <script src=""></script>
+</body>
+</html>
