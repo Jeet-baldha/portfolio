@@ -9,6 +9,13 @@
         "label": "off"
       }
     ],
-    "axe/language": "off"
+    "axe/language": "off",
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ],
+    "disown-opener": "off"
   }
 }

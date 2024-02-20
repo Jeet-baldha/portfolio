@@ -4,14 +4,10 @@ let sideMenu = document.getElementById("sidemenu");
 
 function openmenu(){
     sideMenu.style.right="0"
-    console.log('open')
-
 }
 
 function closemenu(){
     sideMenu.style.right="-200px";
-    console.log('close')
-    
 }
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzpRfEloZFJbj_gmOHM20nKVkVDj4JE3gEtvH07txe4clerJMo9q3rsvIT548hbBoJJJQ/exec'
